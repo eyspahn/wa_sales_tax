@@ -1,2 +1,2 @@
-# wa_sales_tax
-Exploring Washington Sales Tax Data
+# Business Codes & Sales Taxes
+Exploring NAICS codes & Washington State Sales Tax Data
