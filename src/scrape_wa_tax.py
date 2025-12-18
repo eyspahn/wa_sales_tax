@@ -18,9 +18,9 @@ for a in soup.find_all('a', href=True):
         file_url = root_url + a['href']
         filename = a['href'].split('/')[-1]
         filepath = '../data/WA_tax/'+filename
-        file_response = requests.get(url)
+        file_response = requests.get(file_url)
 
         with open(filepath, mode="wb") as file:
-            file.write(response.content)
+            file.write(file_response.content)
         print(f'Downloaded file {filepath}')
 
